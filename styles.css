@@ -61,7 +61,7 @@ input[type="text"]:focus {
 }
 
 .add-field-btn {
-    background: #3498db;
+    background: #FF6B35;
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -72,7 +72,7 @@ input[type="text"]:focus {
 }
 
 .add-field-btn:hover {
-    background: #2980b9;
+    background: #E55A2B;
 }
 
 .card {

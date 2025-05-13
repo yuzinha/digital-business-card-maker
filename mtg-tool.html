@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オンラインMTGツール</title>
+    <link rel="stylesheet" href="mtg-tool.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer-section">
+            <h2>タイマー</h2>
+            <div class="timer-display">60</div>
+            <button id="startTimer">スタート</button>
+            <button id="resetTimer">リセット</button>
+        </div>
+        <div class="participants-section">
+            <h2>参加者リスト</h2>
+            <div class="participants-container">
+                <table class="participants-table">
+                    <thead>
+                        <tr>
+                            <th>名前</th>
+                            <th>参加</th>
+                            <th>当選</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Aさん</td><td><input type="checkbox" class="participant-check"></td><td class="result-cell"></td></tr>
+                        <tr><td>Bさん</td><td><input type="checkbox" class="participant-check"></td><td class="result-cell"></td></tr>
+                        <tr><td>Cさん</td><td><input type="checkbox" class="participant-check"></td><td class="result-cell"></td></tr>
+                        <tr><td>Dさん</td><td><input type="checkbox" class="participant-check"></td><td class="result-cell"></td></tr>
+                        <tr><td>Eさん</td><td><input type="checkbox" class="participant-check"></td><td class="result-cell"></td></tr>
+                        <tr><td>Fさん</td><td><input type="checkbox" class="participant-check"></td><td class="result-cell"></td></tr>
+                        <tr><td>Gさん</td><td><input type="checkbox" class="participant-check"></td><td class="result-cell"></td></tr>
+                        <tr><td>Hさん</td><td><input type="checkbox" class="participant-check"></td><td class="result-cell"></td></tr>
+                        <tr><td>Iさん</td><td><input type="checkbox" class="participant-check"></td><td class="result-cell"></td></tr>
+                        <tr><td>Jさん</td><td><input type="checkbox" class="participant-check"></td><td class="result-cell"></td></tr>
+                    </tbody>
+                </table>
+                <button id="drawParticipant">抽選</button>
+            </div>
+        </div>
+        <div class="roulette-section">
+            <h2>ルーレット</h2>
+            <div class="roulette-container">
+                <div class="roulette-pointer"></div>
+                <div class="roulette-wheel">
+                    <div class="roulette-item"></div>
+                    <div class="roulette-item"></div>
+                    <div class="roulette-item"></div>
+                    <div class="roulette-item-label label1">お題①</div>
+                    <div class="roulette-item-label label2">お題②</div>
+                    <div class="roulette-item-label label3">お題③</div>
+                </div>
+            </div>
+            <button id="startRoulette">スタート</button>
+            <button id="stopRoulette">ストップ</button>
+        </div>
+    </div>
+    <script src="mtg-tool.js"></script>
+</body>
+</html> 
